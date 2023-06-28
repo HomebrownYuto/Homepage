@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <!--基本的な設定-->
+        <meta charset="utf-8">
+        <title>BUTTER - 柚木麻子</title>
+        <link rel="stylesheet" href="index.css">
+        <!-- ビューポートの設定 -->
+	    <meta name="viewport" content="width=device-width,initial-scale=1">
+        <!--jQueryのインポート-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="js/jquery.bgswitcher.js"></script>
+    </head>
+
+    <body class="BUT">
+
+        
+        <div class="navigation">
+            <ul>
+                <li class = "list">
+                    <a href="#">
+                        <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                        <span class="title">ホーム</span>
+                    </a>
+                </li>
+                <li class = "list">
+                    <a href="author/author.html">
+                        <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                        <span class="title">著者紹介</span>
+                    </a>
+                </li>
+                <li class = "list">
+                    <a href="story/story.html">
+                        <span class="icon"><ion-icon name="book-outline"></ion-icon></span>
+                        <span class="title">あらすじ</span>
+                    </a>
+                </li>
+                <li class = "list">
+                    <a href="others/others.html">
+                        <span class="icon"><ion-icon name="albums-outline"></ion-icon></span>
+                        <span class="title">他のおすすめの小説</span>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+
+
+        <div class="butter">BUTTER - 柚木麻子</div>
+
+        <!--ion iconsインポート-->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+        <!--bgSwitcher-->
+        <script>
+            
+                $('.BUT').bgSwitcher({
+                    images: ['butter.jpg', 'butter2.jpg', 'butter3.jpeg'], // 切り替える背景画像を指定
+                    interval: 4000, // 背景画像を切り替える間隔を指定 3000=3秒
+                    loop: true, // 切り替えを繰り返すか指定 true=繰り返す　false=繰り返さない
+                    shuffle: true, // 背景画像の順番をシャッフルするか指定 true=する　false=しない
+                    effect: "fade", // エフェクトの種類をfade,blind,clip,slide,drop,hideから指定
+                    duration: 2000, // エフェクトの時間を指定します。
+                    easing: "swing" // エフェクトのイージングをlinear,swingから指定
+            });
+        </script>
+        
+    </body>
+
+</html>
