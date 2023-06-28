@@ -134,7 +134,19 @@
     text-shadow: 1px 1px 1px #000;
   }
 
-
+@media screen and ( max-width:414px )
+  {
+    ul{
+      list-style: none;
+    }
+    
+    .navigation ul li{
+      list-style: none;
+      float: left;
+      padding: 33px 10px;
+    }
+    
+  }
 
 
 
